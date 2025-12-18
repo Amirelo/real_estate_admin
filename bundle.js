@@ -16222,7 +16222,7 @@ const PATH_SETTINGS = "settings"; // Application settings
  * Template Directory and File References
  * Paths to HTML templates used for page rendering
  */
-const FOLDER_TEMPLATE = "real_estate_admin/templates/";
+const FOLDER_TEMPLATE = "/real_estate_admin/templates/";
 const TEMPLATE_VIEW_ENTITY = "page_entity.html"; // Standard CRUD page template
 const TEMPLATE_FORGOT_PASSWORD = "forgot_password.html";
 const TEMPLATE_SIGN_UP = "sign_up.html";
