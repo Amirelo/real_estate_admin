@@ -1,0 +1,28 @@
+<form id="form-verify" autocomplete="off"
+    class="d-flex vh-100 w-100 justify-content-center align-items-center overflow-hidden"
+    style="background-image: linear-gradient(45deg,var(--primary-color) 50%, var(--secondary-color) 50%);">
+    <div class="w-25 text-white p-4 rounded-lg bg-white text-dark form-card">
+        <div class="form-group row mx-0">
+            <div class="row justify-content-between w-100 mx-0">
+                <input type="number" maxlength="1" id="input-verify-code1" class="form-control col-2 input-code-verify"
+                    autocomplete="off">
+                <input type="number" maxlength="1" id="input-verify-code2" class="form-control col-2 input-code-verify"
+                    autocomplete="off">
+                <input type="number" maxlength="1" id="input-verify-code3" class="form-control col-2 input-code-verify"
+                    autocomplete="off">
+                <input type="number" maxlength="1" id="input-verify-code4" class="form-control col-2 input-code-verify"
+                    autocomplete="off">
+                <input type="number" maxlength="1" id="input-verify-code5" class="form-control col-2 input-code-verify"
+                    autocomplete="off">
+            </div>
+        </div>
+        <small class="text-secondary mb-2 d-block" data-lang-text="text_code_sent">A verification code has been sent to
+            your email.</small>
+        <button id="button-resend-email" style="background-color: transparent;" 
+        class="border-0 mb-4 text-primary-my small"
+            data-lang-text="text_code_resent" tabindex="-1">Resend verification code</button>
+        <button type="submit" class="py-2 button-primary-my btn-block"
+            data-lang-text="verification_button">Submit</button>
+    </div>
+
+</form>

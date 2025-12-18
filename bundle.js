@@ -16354,6 +16354,11 @@ $(function () {
         yield _utilities_SecureAuth__WEBPACK_IMPORTED_MODULE_11__["default"].init();
         yield _utilities_MyUtilities__WEBPACK_IMPORTED_MODULE_1__["default"].checkExistingUser();
         connectNavigation();
+        $('a[data-link]').get().forEach(element => {
+            if ($(element).attr('href').includes('real_estate_admin')) {
+                $(element).attr('href', '/real_estate_admin' + $(element).attr('href'));
+            }
+        });
         gInitializationComplete = true;
         _utilities_MyLogger__WEBPACK_IMPORTED_MODULE_10__["default"].log("---- initialize complete");
     });
@@ -16364,7 +16369,7 @@ document.addEventListener("DOMContentLoaded", () => {
             .closest('a[data-link]');
         if (anchor) {
             e.preventDefault();
-            navigateTo(anchor.getAttribute('href') || '/');
+            navigateTo('/real_estate_admin' + anchor.getAttribute('href') || 0);
         }
     });
     router();
@@ -16471,6 +16476,11 @@ const router = () => __awaiter(void 0, void 0, void 0, function* () {
         _utilities_MyLogger__WEBPACK_IMPORTED_MODULE_10__["default"].log("Is verify page");
         loadPage = () => _constants_webConstants__WEBPACK_IMPORTED_MODULE_6__.PAGE_REAL_ESTATE_VERIFY;
     }
+    $('a[data-link]').get().forEach(element => {
+        if ($(element).attr('href').includes('real_estate_admin')) {
+            $(element).attr('href', '/real_estate_admin' + $(element).attr('href'));
+        }
+    });
     var vPathAuth = ["/" + _constants_webConstants__WEBPACK_IMPORTED_MODULE_6__.PATH_SIGN_IN,
         '/' + _constants_webConstants__WEBPACK_IMPORTED_MODULE_6__.PATH_SIGN_UP,
         '/' + _constants_webConstants__WEBPACK_IMPORTED_MODULE_6__.PATH_PASSWORD_FORGOT,

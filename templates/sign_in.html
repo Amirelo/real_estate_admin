@@ -1,0 +1,39 @@
+<form id="form-signin" class="d-flex vh-100 w-100 justify-content-center align-items-center overflow-hidden"
+    style="background-image: linear-gradient(45deg,var(--primary-color) 50%, var(--secondary-color) 50%);">
+    <div class="w-25 text-white p-4 rounded-lg bg-white text-dark form-card">
+        <h3 class="text-center" data-lang-text="signin_title">Sign In</h3>
+        <div class="form-group ">
+            <label for="input-username" class=" col-form-label" data-lang-text="input_username">Username</label>
+            <input type="text" id="input-username" data-lang-text="input_username" class=" form-control">
+        </div>
+        <div class="form-group password-group">
+            <div class="d-flex justify-content-between">
+                <label for="input-password" class="col-form-label" data-lang-text="input_password">Password</label>
+                <a href="./forgot_password" data-link class="ml-auto text-secondary-my mb-0 col-form-label"
+                    data-lang-text="input_password_forgot" tabindex="-1">Forgot password</a>
+            </div>
+            <div class="position-relative">
+                <input type="password" id="input-password" data-lang-text="input_password" class="form-control">
+                <button type="button" tabindex="-1" class="btn position-absolute button-visibility">
+                    <i class="fa-solid fa-eye-slash"></i>
+                </button>
+            </div>
+        </div>
+
+        <button id="button-signin"
+            class="button-primary-my bg-primary-my py-2 text-white btn-block position-relative overflow-hidden"
+            data-lang-text="signin_button">
+            Sign In
+        </button>
+    </div>
+</form>
+
+<div class="position-absolute w-100 bg-white py-2 d-flex justify-content-center" style="bottom: 0;left: 0;">
+    <p class="mb-0 pr-1" data-lang-text="input_account_none">You don't have an account?&nbsp;</p>
+    <a href="./sign_up" data-link=""><u data-lang-text="input_account_none_button">Sign Up here</u></a>
+</div>
+
+<div aria-live="polite" aria-atomic="true" style="position: fixed; bottom:0; left:0" class="w-100">
+    <div id="toast-container" style="position: absolute; bottom: 1rem; right: 1rem;">
+    </div>
+</div>

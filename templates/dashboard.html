@@ -1,0 +1,69 @@
+<div>
+    <div id="dashboard-cards" class="row mx-0 justify-content-between mb-4">
+    </div>
+
+    <div class="mb-4">
+        <h5 data-lang-text="dashboard_estate_not_verify" class="mb-2">Real Estate need verified <span id="span-verify-total"></span></h5>
+        <table id="table-estates" class="table table-hover table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th data-lang-text="header_photo">Photo</th>
+                    <th data-lang-text="header_title">Title</th>
+                    <th data-lang-text="header_create_date">Create date</th>
+                    <th data-lang-text="header_action">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+
+    <div class="mb-4">
+        <h5 data-lang-text="text_dashboard_request" class="mb-2">User required help <span id="span-request-total"></span></h5>
+        <table id="table-request" class="table table-hover table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th data-lang-text="header_type">Type</th>
+                    <th data-lang-text="header_body">Body</th>
+                    <th data-lang-text="header_create_date">Create date</th>
+                    <th data-lang-text="header_status">Status</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+
+    <div>
+        <h5 data-lang-text="text_location_data" class="mb-2">Location data</h5>
+        <div class="row gap-medium ">
+            <div class="col-md-4 col-12">
+                <div class="bg-light p-4 rounded-lg border h-100">
+                    <h5 class="text-center" data-lang-text="text_active_location">Most active location</h5>
+                    <canvas class="" id="chart-location-active"></canvas>
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="bg-light p-4 rounded-lg border h-100">
+                    <h5 class="text-center" data-lang-text="text_view_location">Most view location</h5>
+                    <canvas class="" id="chart-location-view"></canvas>
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="bg-light p-4 rounded-lg border position-relative h-100">
+                    <h5 class="text-center" data-lang-text="text_top_sell">Top sell</h5>
+                    <canvas class="" id="chart-location-sell"></canvas>
+                    <div class="position-absolute w-100 h-100 d-flex align-items-center overflow-hidden"
+                        style="left:0;top:0; background-color: rgba(0, 0, 0, 0.2); max-width: 0;">
+                        <p class="mb-0 bg-warning w-100 py-2 text-center" data-lang-text="text_no_data">Not enough data
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>

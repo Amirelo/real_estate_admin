@@ -1,0 +1,67 @@
+<form id="form-signup" class="d-flex w-100 justify-content-center align-items-center overflow-hidden py-5"
+    style="background-image: linear-gradient(45deg,var(--primary-color) 50%, var(--secondary-color) 50%); min-height: 100vh;">
+    <div class="w-25 text-white p-4 rounded-lg bg-white text-dark form-card">
+        <h3 class="text-center" data-lang-text="signup_title">Sign Up</h3>
+        <div class="form-group">
+            <label for="input-username" class=" col-form-label" data-lang-text="input_username">Username</label>
+            <input type="text" id="input-username" data-lang-text="input_username" placeholder="Username ..."
+                class=" form-control">
+        </div>
+        <div class="form-group password-group">
+            <label for="input-password" class="col-form-label" data-lang-text="input_password">Password</label>
+            <div class="position-relative">
+                <input type="password" id="input-password" placeholder="Password ..." data-lang-text="input_password"
+                    class="form-control">
+                <button type="button" class="btn position-absolute button-visibility" tabindex="-1">
+                    <i class="fa-solid fa-eye-slash"></i>
+                </button>
+            </div>
+        </div>
+        <div class="form-group password-group">
+            <label for="input-password-confirm" class="col-form-label" data-lang-text="input_password_confirm">Confirm
+                Password</label>
+            <div class="position-relative">
+                <input type="password" id="input-password-confirm" data-lang-text="input_password_confirm"
+                    placeholder="Password ..." class="form-control">
+                <button type="button" class="btn position-absolute button-visibility" tabindex="-1">
+                    <i class="fa-solid fa-eye-slash"></i>
+                </button>
+            </div>
+        </div>
+        <div class="row form-group">
+            <div class="col-lg-6">
+                <label for="input-firstname" data-lang-text="input_name_first" class=" col-form-label">First
+                    name:</label>
+                <input type="text" id="input-firstname" data-lang-text="input_name_first" placeholder="First Name ..."
+                    class=" form-control">
+            </div>
+            <div class="col-lg-6">
+                <label for="input-lastname" data-lang-text="input_name_last" class=" col-form-label">Last name:</label>
+                <input type="text" id="input-lastname" data-lang-text="input_name_last" placeholder="Last Name ..."
+                    class=" form-control">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="input-email" class=" col-form-label" data-lang-text="input_email">Email</label>
+            <input type="text" id="input-email" placeholder="Email ..." data-lang-text="input_email"
+                class=" form-control">
+        </div>
+
+
+        <button type="submit"
+            class="button-primary-my bg-primary-my py-2 btn-block position-relative overflow-hidden text-white"
+            data-lang-text="signup_button">
+            Sign Up
+        </button>
+    </div>
+</form>
+
+<div class="position-fixed w-100 bg-white py-2 d-flex justify-content-center" style="bottom: 0;left: 0;">
+    <p class="mb-0 pr-1" data-lang-text="input_account_exist">Already have an account?&nbsp;</p>
+    <a href="./sign_in" class=""><u data-lang-text="input_account_exist_button">Sign In here</u></a>
+</div>
+
+<div aria-live="polite" aria-atomic="true" style="position: fixed; bottom:0; left:0" class="w-100">
+    <div id="toast-container" style="position: absolute; bottom: 1rem; right: 1rem;">
+    </div>
+</div>

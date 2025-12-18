@@ -1,0 +1,173 @@
+<div class="position-relative">
+    <section class="row mx-0 mt-5 pt-5 gap-medium">
+        <div class="col-lg-8">
+            <div class="w-100 overflow-hidden position-relative mb-4" style="transition: 0.3s;">
+                <div class="w-100 d-flex" style="overflow:hidden;white-space: nowrap; max-height: 30rem;"
+                    id="image-slide">
+                </div>
+
+                <small class="d-flex px-3 py-2 bg-dark text-white rounded-lg position-absolute font-weight-bold"
+                    style="width: fit-content; bottom: 2rem; right: 2rem;"><span
+                        id="span-image-current">1</span>&nbsp;/&nbsp;<span id="span-image-max">?</span></small>
+
+                <button id="button-slide-left" class="position-absolute rounded-lg"
+                    style="top:50%; left:2rem; width: 2rem; height: 2rem;"><i
+                        class="fa-solid fa-chevron-left"></i></button>
+                <button id="button-slide-right" class="position-absolute rounded-lg"
+                    style="top:50%; right:2rem; width: 2rem; height: 2rem;"><i
+                        class="fa-solid fa-chevron-right"></i></button>
+            </div>
+
+            <div class="mb-4">
+
+                <h3 id="h5-title"></h3>
+                <p>Address: <span id="span-address"></span></p>
+            </div>
+            <div class="mb-4">
+                <h4>Property description</h4>
+                <p><span id="span-description"></span></p>
+            </div>
+
+            <!-- Detail -->
+            <div class="mb-4">
+
+                <h4>Property details:</h4>
+
+
+                <div class="row justify-content-between mx-0" style="row-gap: 1rem;">
+                    <div class="col-lg-6 row justify-content-between align-items-center border-top border-bottom py-2">
+                        <div class="d-flex align-items-center">
+                            <i class="fa-solid fa-hand-holding-dollar pr-3"></i>
+                            <span class="font-weight-bold">Price</span>
+                        </div>
+                        <span class="p-price"></span>
+                    </div>
+                    <div class="col-lg-6 row justify-content-between align-items-center border-top border-bottom py-2">
+                        <div class="d-flex align-items-center">
+                            <i class="fa-solid fa-bed pr-3"></i>
+                            <span class="font-weight-bold">Bedroom</span>
+                        </div>
+                        <span class="p-bedroom"></span>
+                    </div>
+                    <div class="col-lg-6 row justify-content-between align-items-center border-top border-bottom py-2">
+                        <div class="d-flex align-items-center">
+                            <i class="fa-solid fa-window-maximize pr-3"></i>
+                            <span class="font-weight-bold">Arceage</span>
+                        </div>
+                        <p class="mb-0"><span class="p-acreage"></span> m<sup>2</sup></p>
+                    </div>
+                    <div class="col-lg-6 row justify-content-between align-items-center border-top border-bottom py-2">
+                        <div class="d-flex align-items-center">
+                            <i class="fa-solid fa-toilet pr-3"></i>
+                            <span class="font-weight-bold">Bathroom</span>
+                        </div>
+                        <span class="p-bathroom"></span>
+                    </div>
+                    <div class="col-lg-6 row justify-content-between align-items-center border-top border-bottom py-2">
+                        <div class="d-flex align-items-center">
+                            <i class="fa-solid fa-building pr-3"></i>
+                            <span class="font-weight-bold">Building Type</span>
+                        </div>
+                        <span id="p-room-type"></span>
+                    </div>
+                    <div class="col-lg-6 row justify-content-between align-items-center border-top border-bottom py-2">
+                        <div class="d-flex align-items-center">
+                            <i class="fa-solid fa-couch pr-3"></i>
+                            <span class="font-weight-bold">Furniture</span>
+                        </div>
+                        <span id="p-furniture"></span>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Project -->
+             <div class="mb-4">
+
+                 <div class="mb-2 d-flex justify-content-between align-items-center">
+                     <h4>Project Details:</h4>
+                     <a class="text-danger" href="">View <span class="font-weight-bold" id="span-realestate-amount"></span>
+                         properties in this location <i class="fa-solid fa-chevron-right"></i></a>
+     
+                 </div>
+                 <div id="div-property-project" class="row p-4 border">
+                     <img class="col-lg-2" style="height: 4rem; width: 4rem;" src="" alt="">
+                     <div class="col-lg-10">
+                         <h5 class="name text-capitalize"></h5>
+                         <p class="address"></p>
+                     </div>
+                 </div>
+             </div>
+
+             <div class="mb-4">
+                <h4>Property Amenities</h4>
+                <div class="row" id="div-amenities">
+
+                </div>
+             </div>
+
+              <div class="mb-4">
+                <h4>Floor Plan</h4>
+                <div class="row" id="div-floor-plan">
+
+                </div>
+             </div>
+
+             <div class="mb-4">
+                 <h4>View on map:</h4>
+                 <div id="div-map" class="w-100" style="height: 50vh; z-index: 0;">
+     
+                 </div>
+             </div>
+
+             <div class="mb-4">
+                <h4>Nearby properties</h4>
+                <div id="div-properties-nearby" class="row">
+
+                </div>
+             </div>
+        </div>
+
+        <div class="col-lg-4" id="div-user">
+            <div class="p-2 rounded-lg"
+                style="background-image: linear-gradient(to bottom left,#0F2027,#203A43,#2C5364);">
+                <p class=" text-right text-white pt-3">Professional Realtor</p>
+                <div class="border rounded-lg bg-white p-3 position-relative">
+                    <div class="position-relative">
+                        <img id="img-customer-photo" style="width: 4rem; height: 4rem; bottom:50%; left: 0.5rem;"
+                            class="rounded-circle position-absolute" src="" alt="">
+                        <h5 id="h5-customer-name" class="text-capitalize text-right">Name</h5>
+                    </div>
+                    <div class="row">
+                        <p class="text-center col-lg-6">Member since: <br><span id="span-customer-year" class="font-weight-bold"></span></p>
+                        <p class="text-center col-lg-6">Current posts: <br><span id="span-customer-num" class="font-weight-bold"></span></p>
+
+                    </div>
+
+                    <a id="button-bio" class="btn btn-block">View bio <i class="fa-solid fa-chevron-right pl-2"></i></a>
+
+                    <hr>
+                    <a href="" id="a-contact-zalo" class="btn btn-outline-primary btn-block">Contact through zalo</a>
+                    <button 
+                    id="button-contact-phone" 
+                    class="btn btn-primary btn-block mb-2"
+                    data-container="body" 
+                    data-toggle="popover" 
+                    data-placement="right" 
+                    data-content="Copied to clipboard">Phone: <span id="span-phone-mobile"></span></button>
+
+                    <button id="button-cart-add" class="button-primary-my btn-block">Request Visit</button>
+                    
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+    <div class="p-2 border-top bg-secondary-my border-left " style="bottom: 0;right: 0%;position:fixed; border-top-left-radius: 0.4rem;">
+        <button id="button-reject" class="button-primary-my py-2 bg-danger">Reject</button>
+        <button id="button-take-down" class="button-primary-my py-2 bg-warning">Take down</button>
+        <button id="button-accept" class="button-primary-my py-2 bg-success">Accept</button>
+        <button id="button-sold" class="button-primary-my py-2 bg-info">Sold</button>
+    </div>
+</div>
