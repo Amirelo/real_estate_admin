@@ -16355,7 +16355,7 @@ $(function () {
         yield _utilities_MyUtilities__WEBPACK_IMPORTED_MODULE_1__["default"].checkExistingUser();
         connectNavigation();
         $('a[data-link]').get().forEach(element => {
-            if ($(element).attr('href').includes('real_estate_admin')) {
+            if (!$(element).attr('href').includes('real_estate_admin')) {
                 $(element).attr('href', '/real_estate_admin' + $(element).attr('href'));
             }
         });
