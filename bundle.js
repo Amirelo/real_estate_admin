@@ -16344,7 +16344,7 @@ var gLanguage = 'vn';
 var gInitializationComplete = false;
 $(function () {
     return __awaiter(this, void 0, void 0, function* () {
-        _utilities_MyLogger__WEBPACK_IMPORTED_MODULE_10__["default"].isActive = true;
+        _utilities_MyLogger__WEBPACK_IMPORTED_MODULE_10__["default"].isActive = false;
         _utilities_MyLogger__WEBPACK_IMPORTED_MODULE_10__["default"].logLevel = 0;
         _utilities_MyLogger__WEBPACK_IMPORTED_MODULE_10__["default"].log("Initiate secure auth");
         console.warn = () => { };
@@ -20234,7 +20234,6 @@ class SecureAuth {
                 // this.csrfToken = token;
                 _MyLogger__WEBPACK_IMPORTED_MODULE_0__["default"].log("Fetch token success");
                 var vUserData = yield this.getCurrentUser();
-                this.userInfo = vUserData !== null && vUserData !== void 0 ? vUserData : null;
                 return;
             }
             _MyLogger__WEBPACK_IMPORTED_MODULE_0__["default"].log("No token found, feting from API");
@@ -20359,8 +20358,8 @@ class SecureAuth {
                         'X-XSRF-TOKEN': yield this.getCsrfToken()
                     },
                     success: (result) => {
-                        _MyLogger__WEBPACK_IMPORTED_MODULE_0__["default"].log("Fetch user", result);
-                        this.userInfo = result;
+                        _MyLogger__WEBPACK_IMPORTED_MODULE_0__["default"].log("Fetch user", result['data']);
+                        this.userInfo = result['data'];
                         _MyLogger__WEBPACK_IMPORTED_MODULE_0__["default"].log("User info:", this.userInfo);
                         return this.userInfo;
                     },
@@ -20812,7 +20811,7 @@ function createPagination(pageData, transformedData) {
 /******/ 	
 /******/ 	/* webpack/runtime/publicPath */
 /******/ 	(() => {
-/******/ 		__webpack_require__.p = "/real_estate_admin/";
+/******/ 		__webpack_require__.p = "/";
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/jsonp chunk loading */
