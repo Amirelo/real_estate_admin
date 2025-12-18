@@ -16222,7 +16222,7 @@ const PATH_SETTINGS = "settings"; // Application settings
  * Template Directory and File References
  * Paths to HTML templates used for page rendering
  */
-const FOLDER_TEMPLATE = "/templates/";
+const FOLDER_TEMPLATE = "real_estate_admin/templates/";
 const TEMPLATE_VIEW_ENTITY = "page_entity.html"; // Standard CRUD page template
 const TEMPLATE_FORGOT_PASSWORD = "forgot_password.html";
 const TEMPLATE_SIGN_UP = "sign_up.html";
@@ -16369,7 +16369,7 @@ document.addEventListener("DOMContentLoaded", () => {
             .closest('a[data-link]');
         if (anchor) {
             e.preventDefault();
-            navigateTo('/real_estate_admin' + anchor.getAttribute('href') || 0);
+            navigateTo(anchor.getAttribute('href') || '/');
         }
     });
     router();
@@ -16417,6 +16417,9 @@ function connectNavigation() {
 function navigateTo(paramUrl) {
     if (!paramUrl.startsWith('/')) {
         paramUrl = '/' + paramUrl;
+    }
+    if (!paramUrl.includes('real_estate_admin')) {
+        paramUrl = '/real_estate_admin' + paramUrl;
     }
     history.pushState(null, '', paramUrl);
     router();
